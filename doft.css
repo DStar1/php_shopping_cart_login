@@ -1,0 +1,124 @@
+/*magin:auto can center elements within container*/
+/*margin:bottom can set the distance for the start place of next element*/
+/*position: absolute; starts after last positioned elem*/
+/*border-radius: x(px); curvs edges*/
+/*box-shadow:(px) (px) (px) (color); creates shadow*/
+/*float:(direction); floats element toward direction*/
+.banner	{
+			background-color:#8F8F8F;
+			/*height:auto;*/
+			width:100%;
+			/*border-radius:5px;*/
+			/*margin:auto;*/
+			/*box-shadow:10px 10px 5px black;*/
+			margin-bottom:1%;
+		}
+.left	{
+			background-color:#8E8E8E;
+			/*height:auto;*/
+			width:7%;
+			/*border-radius:10px;*/
+			float:left;
+			/*margin-left:0%;*/
+			/*box-shadow: 10px 10px 5px black;*/
+		}
+.mid	{
+			/*position: absolute;*/
+			/*position: relative;*/
+			background-color:#8E8E8E;
+			/*height:auto;*/
+			width:64%;
+			/*border-radius:10px;*/
+			/*display: inline-block;*/
+			margin: auto;
+			/*margin-left:2%;*/
+			/*box-shadow: 10px 10px 5px black;*/
+		}
+.right	{
+			background-color:#8E8E8E;
+			/*height:auto;*/
+			width:7%;
+			/*border-radius:10px;*/
+			float:right;
+			/*margin-right:9%;*/
+			/*box-shadow: 10px 10px 5px black;*/
+		}
+.Limg	{
+			width:80%;
+			margin-left:10%;
+			margin-top:10%;
+			}
+.Rimg	{
+			width:60%;
+			margin-left:20%;
+			margin-top:10%;
+		}
+#disney	{
+			width:1.5%;
+			float:right;
+			margin-top:0.5%;
+			margin-right:0.5%;
+			margin-left:-1.5%;
+		}
+#brick	{
+			margin-right: auto;
+			margin-left: auto;
+			background-image:url("resources/brick.jpg");
+			height:60px;
+			width:85%;
+			margin-bottom:250%;
+		}
+#close	{
+			width:1.5%;
+			float:right;
+			margin-top:6.5%;
+		}
+#midpic	{
+			width:98%;
+			margin-left:1%;
+			margin-top:1%;
+			margin-bottom:1%;
+		}
+#eye	{
+			border: 6px solid red;
+			width: 65%;
+			border-radius: 5px;
+		}
+/*.greenb	{
+			position: relative;
+			background-color:#88ff89;
+			margin-top:33%;
+			margin-left:5%;
+			width:30%;
+			height:auto;
+			box-shadow: 10px 10px 5px black;
+			border-radius: 5px;
+		}
+.text1	{
+			margin-left: 1%;
+			font-size: 1em;
+		}
+.text2	{
+			margin-left: 1%;
+			font-size: 0.9em;
+			font-style: italic;
+			font-family: sans-serif;
+		}
+.input	{
+			margin-top: -2%;
+			margin-left: 1%;
+			width: 70%;
+			float:left;
+		}
+.button	{
+			margin-top: -2%;
+			margin-left: 1%;
+			float:left;
+			border:1px solid grey;
+		}*/
+/*.ikea	{
+			height: 500px;
+			width: 500px;
+			position: absolute;
+			margin-top: 50%;
+		}*/
