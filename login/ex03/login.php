@@ -5,12 +5,15 @@
 	if ($_GET['login'] && $_GET['passwd'] && auth($_GET['login'], $_GET['passwd']))
 	{
 		$_SESSION['loggued_on_user'] = $_GET['login'];
-		echo "OK\n";
+		$_SESSION['../../doft.html'];
+		header('Location: ../../doft.html');
+		// echo "OK\n";
 	}
 	else 
 	{
 		$_SESSION['loggued_on_user'] = "";
-		echo "ERROR\n";
+		header('Location: ../../login.html');
+		// echo "ERROR\n";
 	}
 
 ?>

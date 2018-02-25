@@ -25,14 +25,14 @@
 .mid	{
 			/*position: absolute;*/
 			/*position: relative;*/
-			background-color:#8E8E8E;
+			background-color:white;/*#8E8E8E;*/
 			/*height:auto;*/
 			width:64%;
 			/*border-radius:10px;*/
 			/*display: inline-block;*/
 			margin: auto;
 			/*margin-left:2%;*/
-			/*box-shadow: 10px 10px 5px black;*/
+			box-shadow: 5px 5px 2.5px black;
 		}
 .right	{
 			background-color:#8E8E8E;
@@ -74,7 +74,7 @@
 			margin-top:6.5%;
 		}
 #midpic	{
-			width:98%;
+			width:45%;
 			margin-left:1%;
 			margin-top:1%;
 			margin-bottom:1%;
@@ -84,41 +84,11 @@
 			width: 65%;
 			border-radius: 5px;
 		}
-/*.greenb	{
-			position: relative;
-			background-color:#88ff89;
-			margin-top:33%;
-			margin-left:5%;
-			width:30%;
-			height:auto;
-			box-shadow: 10px 10px 5px black;
-			border-radius: 5px;
-		}
-.text1	{
-			margin-left: 1%;
-			font-size: 1em;
-		}
-.text2	{
-			margin-left: 1%;
-			font-size: 0.9em;
-			font-style: italic;
-			font-family: sans-serif;
-		}
-.input	{
-			margin-top: -2%;
-			margin-left: 1%;
-			width: 70%;
-			float:left;
-		}
-.button	{
-			margin-top: -2%;
-			margin-left: 1%;
-			float:left;
-			border:1px solid grey;
-		}*/
-/*.ikea	{
-			height: 500px;
-			width: 500px;
-			position: absolute;
-			margin-top: 50%;
-		}*/
+form 	{
+    /*display: inline-block;*/
+	font-family: Helvetica, Arial;
+	/*font-style:monospace;*/
+	margin-top: 5%;
+	margin-bottom: 5%;
+    text-align: center;
+}

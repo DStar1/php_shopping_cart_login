@@ -2,7 +2,7 @@
 
 $bool = 0;
 
-	if ($_POST['login'] && $_POST['passwd'] && $_POST['submit']) 
+	if ($_POST['login'] && $_POST['passwd'] && $_POST['passwd1'] && $_POST['passwd'] === $_POST['passwd1'] && $_POST['submit']) 
 	{
 		if ($_POST['submit'] === "OK")
 		{
@@ -19,7 +19,8 @@ $bool = 0;
 				}
 			if ($bool) 
 			{
-				echo "ERROR\n";
+				header('Location: ../../create.html');
+				// echo "ERROR\n";
 			} 
 			else 
 			{
@@ -27,13 +28,14 @@ $bool = 0;
 				$temp['passwd'] = hash('whirlpool', $_POST['passwd']);
 				$acct[] = $temp;
 				file_put_contents('../private/passwd', serialize($acct));
-				echo "OK\n";
+				header('Location: ../../doft.html');
+				// echo "OK\n";
 			}
 		}
 		else 
-			echo "ERROR\n";
+			header('Location: ../../create.html');//echo "ERROR\n";
 	} 
 	else 
-		echo "ERROR\n";
+		header('Location: ../../create.html');//echo "ERROR\n";
 
 ?>
