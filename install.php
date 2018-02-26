@@ -60,9 +60,11 @@
 
 	$temp['g10_pr'] = 120;
 	$temp['g10_cat'] = 2;
+	$temp1['glasses10'] = "Pair 10";
 
 	$temp['g11_pr'] = 180;
 	$temp['g11_cat'] = 2;
+	$temp1['glasses11'] = "Pair 11";
 
 	$data = $temp;
 	file_put_contents('./secure/data', serialize($data));
