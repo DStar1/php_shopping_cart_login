@@ -4,7 +4,7 @@
 	{
 		if (!$login || !$passwd)
 			return false;
-		$acct = unserialize(file_get_contents('../private/passwd'));
+		$acct = unserialize(file_get_contents('../../secure/password'));
 		if ($acct) 
 		{
 			foreach ($acct as $key => $arg) 

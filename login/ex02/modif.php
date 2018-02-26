@@ -4,7 +4,7 @@ $bool = 0;
 
 	if ($_POST['login'] && $_POST['oldpw'] && $_POST['submit'] && $_POST['newpw'] && $_POST['submit'] === "OK")
 	{
-        $acct = unserialize(file_get_contents('../private/passwd'));
+        $acct = unserialize(file_get_contents('../../secure/password'));
 		if ($acct)
 		{
 			foreach ($acct as $key => $arg ) 
@@ -17,7 +17,7 @@ $bool = 0;
 			}
 			if ($bool)
 			{
-				file_put_contents('../private/passwd', serialize($acct));
+				file_put_contents('../../secure/password', serialize($acct));
 				echo "OK\n";
 			}
 			else

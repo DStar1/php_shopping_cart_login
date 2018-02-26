@@ -6,11 +6,11 @@ $bool = 0;
 	{
 		if ($_POST['submit'] === "OK")
 		{
-			if (!file_exists('../private')) 
-				mkdir("../private");
-			if (!file_exists('../private/passwd')) 
-				file_put_contents('../private/passwd', null);
-			$acct = unserialize(file_get_contents('../private/passwd'));
+			// if (!file_exists('../private')) 
+			// 	mkdir("../private");
+			if (!file_exists('../../secure/password')) 
+				file_put_contents('../../secure/password', null);
+			$acct = unserialize(file_get_contents('../../secure/password'));
 			if ($acct) 
 				foreach ($acct as $key => $arg) 
 				{
@@ -19,7 +19,7 @@ $bool = 0;
 				}
 			if ($bool) 
 			{
-				header('Location: ../../create.html');
+				header('Location: ../../create.php');
 				// echo "ERROR\n";
 			} 
 			else 
@@ -27,15 +27,15 @@ $bool = 0;
 				$temp['login'] = $_POST['login'];
 				$temp['passwd'] = hash('whirlpool', $_POST['passwd']);
 				$acct[] = $temp;
-				file_put_contents('../private/passwd', serialize($acct));
-				header('Location: ../../doft.html');
+				file_put_contents('../../secure/password', serialize($acct));
+				header('Location: ../../index.php');
 				// echo "OK\n";
 			}
 		}
 		else 
-			header('Location: ../../create.html');//echo "ERROR\n";
+			header('Location: ../../create.php');//echo "ERROR\n";
 	} 
 	else 
-		header('Location: ../../create.html');//echo "ERROR\n";
+		header('Location: ../../create.php');//echo "ERROR\n";
 
 ?>
