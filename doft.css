@@ -5,7 +5,7 @@
 /*box-shadow:(px) (px) (px) (color); creates shadow*/
 /*float:(direction); floats element toward direction*/
 .nav	{
-			background-color:#8F8F8F;
+			background-color:black;
 			/*height:auto;
 			width:100%;
 			/*border-radius:5px;*/
@@ -17,34 +17,62 @@
 			display: block;
 			position: fixed;
 			width: 100%;
-			font-size: 4vh;
+			height:75px;
+			font-size: 4vw;
 			margin: 0;
 			z-index: 2;
+			text-align:center;
+			/*box-shadow: 5px 5px 2.5px black;*/
 	/*margin-bottom:100%;*/
 		}
+.nav2	{
+			position: relative;
+			background-color:#8F8F8F;
+			text-align:center;
+			/*font-size: 4vh;*/
+			font-size: 4vw;
+			margin-bottom:10%;
+			height:10vw;
+			/*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
+			font-family:'San Francisco', Helvetica, Arial, san-serif;
+			color: black;
+			opacity: 0.7;
+		}
 .left	{
+	position: relative;
 			background-color:#8E8E8E;
-			/*height:auto;*/
+			height:auto;
 			width:7%;
 			/*border-radius:10px;*/
-						margin: 6vmax auto;
+			margin: 6vmax auto;
 			float:left;
+			/*margin: auto;*/
+			margin-top:50px;
+			position: fixed;
+			/*top:10%;*/
 			/*margin-left:0%;*/
 			/*box-shadow: 10px 10px 5px black;*/
 		}
 .mid	{
 			/*position: absolute;*/
-			/*position: relative;*/
-			margin-top:10%;
+			position: relative;
+			
 			background-color:white;/*#8E8E8E;*/
 			/*height:auto;*/
-			width:64%;
+			width:85%;
 			/*border-radius:10px;*/
 			/*display: inline-block;*/
-			margin: 6vmax auto;
-			/*margin: auto;*/
+			/*margin: 6vmax auto;*/
+			margin: auto;
+			margin-top:75px;
 			/*margin-left:2%;*/
 			box-shadow: 5px 5px 2.5px black;
+			/*opacity: 0.8;*/
+		}
+.buy_img{
+			width:100%;
+			margin-left:25%;
+			margin-bottom:10%;
 		}
 .right	{
 			background-color:#8E8E8E;
