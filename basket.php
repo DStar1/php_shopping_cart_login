@@ -43,45 +43,55 @@
                 }
                 if ($basket[$key]['glasses2'] > 0)
                 {
-                    $price2 = $basket[$key]['glasses2'] * $data['g1_pr'];
-                    echo '<tr><td>' . $data['glasses2'] . '</td><td>' . $basket[$key]['glasses2'] . '</td><td> $' . $data['g1_pr'] . '</td><td> $' . $price2 . '</td></tr>';
+                    $price2 = $basket[$key]['glasses2'] * $data['g2_pr'];
+                    echo '<tr><td>' . $data['glasses2'] . '</td><td>' . $basket[$key]['glasses2'] . '</td><td> $' . $data['g2_pr'] . '</td><td> $' . $price2 . '</td></tr>';
                 }
                 if ($basket[$key]['glasses3'] > 0)
                 {
-                    $price3 = $basket[$key]['glasses3'] * $data['g1_pr'];
-                    echo '<tr><td>' . $data['glasses3'] . '</td><td>' . $basket[$key]['glasses3'] . '</td><td> $' .$data['g1_pr'] . '</td><td> $' . $price3 . '</td></tr>';
+                    $price3 = $basket[$key]['glasses3'] * $data['g3_pr'];
+                    echo '<tr><td>' . $data['glasses3'] . '</td><td>' . $basket[$key]['glasses3'] . '</td><td> $' .$data['g3_pr'] . '</td><td> $' . $price3 . '</td></tr>';
                 }
                 if ($basket[$key]['glasses4'] > 0)
                 {
-                    $price4 = $basket[$key]['glasses4'] * $data['g1_pr'];
-                    echo '<tr><td>' . $data['glasses4'] . '</td><td>' . $basket[$key]['glasses4'] . '</td><td> $' . $data['g1_pr'] . '</td><td> $' . $price4 . '</td></tr>';
+                    $price4 = $basket[$key]['glasses4'] * $data['g4_pr'];
+                    echo '<tr><td>' . $data['glasses4'] . '</td><td>' . $basket[$key]['glasses4'] . '</td><td> $' . $data['g4_pr'] . '</td><td> $' . $price4 . '</td></tr>';
                 }
                 if ($basket[$key]['glasses5'] > 0)
                 {
-                    $price5 = $basket[$key]['glasses5'] * $data['g1_pr'];
-                    echo '<tr><td>' . $data['glasses5'] . '</td><td>' . $basket[$key]['glasses5'] . '</td><td> $' . $data['g1_pr'] . '</td><td> $' . $price5 . '</td></tr>';
+                    $price5 = $basket[$key]['glasses5'] * $data['g5_pr'];
+                    echo '<tr><td>' . $data['glasses5'] . '</td><td>' . $basket[$key]['glasses5'] . '</td><td> $' . $data['g5_pr'] . '</td><td> $' . $price5 . '</td></tr>';
                 }
                 if ($basket[$key]['glasses6'] > 0)
                 {
-                    $price6 = $basket[$key]['glasses6'] * $data['g1_pr'];
-                    echo '<tr><td>' . $data['glasses6'] . '</td><td>' . $basket[$key]['glasses6'] . '</td><td> $' . $data['g1_pr'] . '</td><td> $' . $price6 . '</td></tr>';
+                    $price6 = $basket[$key]['glasses6'] * $data['g6_pr'];
+                    echo '<tr><td>' . $data['glasses6'] . '</td><td>' . $basket[$key]['glasses6'] . '</td><td> $' . $data['g6_pr'] . '</td><td> $' . $price6 . '</td></tr>';
                 }
                 if ($basket[$key]['glasses7'] > 0)
                 {
-                    $price7 = $basket[$key]['glasses7'] * $data['g1_pr'];
-                    echo '<tr><td>' . $data['glasses7'] . '</td><td>' . $basket[$key]['glasses7'] . '</td><td> $' . $data['g1_pr'] . '</td><td> $' . $price7 . '</td></tr>';
+                    $price7 = $basket[$key]['glasses7'] * $data['g7_pr'];
+                    echo '<tr><td>' . $data['glasses7'] . '</td><td>' . $basket[$key]['glasses7'] . '</td><td> $' . $data['g7_pr'] . '</td><td> $' . $price7 . '</td></tr>';
                 }
                 if ($basket[$key]['glasses8'] > 0)
                 {
-                    $price8 = $basket[$key]['glasses8'] * $data['g1_pr'];
-                    echo '<tr><td>' . $data['glasses8'] . '</td><td>' . $basket[$key]['glasses8'] . '</td><td> $' . $data['g1_pr'] . '</td><td> $' . $price8 . '</td></tr>';
+                    $price8 = $basket[$key]['glasses8'] * $data['g8_pr'];
+                    echo '<tr><td>' . $data['glasses8'] . '</td><td>' . $basket[$key]['glasses8'] . '</td><td> $' . $data['g8_pr'] . '</td><td> $' . $price8 . '</td></tr>';
                 }
                 if ($basket[$key]['glasses9'] > 0)
                 {
-                    $price9 = $basket[$key]['glasses9'] * $data['g1_pr'];
-                    echo '<tr><td>' . $data['glasses9'] . '</td><td>' . $basket[$key]['glasses9'] . '</td><td> $' . $data['g1_pr'] . '</td><td> $' . $price9 . '</td></tr>';
+                    $price9 = $basket[$key]['glasses9'] * $data['g9_pr'];
+                    echo '<tr><td>' . $data['glasses9'] . '</td><td>' . $basket[$key]['glasses9'] . '</td><td> $' . $data['g9_pr'] . '</td><td> $' . $price9 . '</td></tr>';
                 }
-                $totalprice = $price1 + $price2 + $price3 + $price4 + $price5 + $price6 + $price7 + $price8 + $price9;
+                if ($basket[$key]['glasses10'] > 0)
+                {
+                    $price10 = $basket[$key]['glasses10'] * $data['g10_pr'];
+                    echo '<tr><td>' . $data['glasses10'] . '</td><td>' . $basket[$key]['glasses10'] . '</td><td> $' . $data['g10_pr'] . '</td><td> $' . $price10 . '</td></tr>';
+                }
+                if ($basket[$key]['glasses11'] > 0)
+                {
+                    $price11 = $basket[$key]['glasses11'] * $data['g11_pr'];
+                    echo '<tr><td>' . $data['glasses11'] . '</td><td>' . $basket[$key]['glasses11'] . '</td><td> $' . $data['g11_pr'] . '</td><td> $' . $price11 . '</td></tr>';
+                }
+                $totalprice = $price1 + $price2 + $price3 + $price4 + $price5 + $price6 + $price7 + $price8 + $price9 + $price10 + $price11;
             }
         }
     }

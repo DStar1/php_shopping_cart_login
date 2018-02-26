@@ -59,6 +59,16 @@
 						$basket[$key]['glasses9'] = $basket[$key]['glasses9'] + ($_GET['glasses9'] * 1)+1;
 						$_SESSION['add'] = 1;
 					}
+					if ($_GET['glasses10'] === "Buy")
+					{
+						$basket[$key]['glasses10'] = $basket[$key]['glasses10'] + ($_GET['glasses10'] * 1)+1;
+						$_SESSION['add'] = 1;
+					}
+					if ($_GET['glasses11'] === "Buy")
+					{
+						$basket[$key]['glasses11'] = $basket[$key]['glasses11'] + ($_GET['glasses11'] * 1)+1;
+						$_SESSION['add'] = 1;
+					}
 					file_put_contents('./secure/basket', serialize($basket));
 				}
 			}
@@ -107,6 +117,16 @@
 				if ($_GET['glasses9'] === "Buy")
 				{
 					$temp['glasses9'] = ($_GET['glasses9'] * 1) +1;
+					$_SESSION['add'] = 1;
+				}
+				if ($_GET['glasses10'] === "Buy")
+				{
+					$basket[$key]['glasses10'] = $basket[$key]['glasses10'] + ($_GET['glasses10'] * 1)+1;
+					$_SESSION['add'] = 1;
+				}
+				if ($_GET['glasses11'] === "Buy")
+				{
+					$basket[$key]['glasses11'] = $basket[$key]['glasses11'] + ($_GET['glasses11'] * 1)+1;
 					$_SESSION['add'] = 1;
 				}
 				$basket[] = $temp;
